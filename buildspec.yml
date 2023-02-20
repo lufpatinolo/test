@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+      runtime-versions:
+          nodejs:18
+      commands:
+          - echo "installing something"
+  pre_build:
+      commands:
+          - echo "creating folder"
+  build:
+      commands:
+          - echo "Copying the file"
+  post_build:
+      commands:
+          - echo "hello post build"
